@@ -4,76 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Odin Project | Sign-up Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <div class="form-image"></div>
+    <div class="main">
+      <div class="form-image">
+        <div class="title-container">
+          <img class="logo" src="assets/odin-lined.png" alt="Odin logo" />
+          <h1 class="title">ODIN</h1>
+        </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@jonnyauh">
+          Jonny Auh</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+      </div>
       <div class="form-container">
         <div class="description-text">
           <p>
             This is not a real online service! You know you need something like
-            this in your real life to help you realize your deepest dreams. Sign
-            up now to get started.
+            this in your real life to help you realize your deepest dreams. <span>Sign
+              up now to get started.</span>
           </p>
           <p>You know you want to</p>
         </div>
         <form action="#" method="post">
           <fieldset>
-            <label for="user-first-name">FIRST NAME</label>
-            <input
-              type="text"
-              name="user-first-name"
-              id="user-first-name"
-              placeholder="First Name"
-              required
-            />
-            <label for="user-last-name">LAST NAME</label>
-            <input
-              type="text"
-              name="user-last-name"
-              id="user-last-name"
-              placeholder="Last Name"
-              required
-            />
-            <label for="user-email">EMAIL</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="example@email.com"
-              required
-            />
-            <label for="user-phone-number">PHONE NUMBER</label>
-            <input
-              type="number"
-              name="user-phone-number"
-              id="user-phone-number"
-              placeholder="+44 1234567890"
-              pattern="\+44\s?\d{10}"
-              required
-            />
-            <label for="user-password">PASSWORD</label>
-            <input
-              type="password"
-              name="user-password"
-              id="user-password"
-              min="6"
-              max="18"
-              required
-            />
-            <label for="user-confirm-password">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              name="user-confirm-password"
-              id="user-confirm-password"
-              min="6"
-              max="18"
-              required
-            />
+            <legend>Let's do this!</legend>
+            <div class="input-group">
+              <label for="user-first-name">FIRST NAME</label>
+              <input
+                type="text"
+                name="user-first-name"
+                id="user-first-name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="user-last-name">LAST NAME</label>
+              <input
+                type="text"
+                name="user-last-name"
+                id="user-last-name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="user-email">EMAIL</label>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="example@email.com"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="user-phone-number">PHONE NUMBER</label>
+              <input
+                type="text"
+                name="user-phone-number"
+                id="user-phone-number"
+                placeholder="+44 1234567890"
+                pattern="\+44\s?\d{10}"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="user-password">PASSWORD</label>
+              <input
+                type="password"
+                name="user-password"
+                id="user-password"
+                min="6"
+                max="18"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="user-confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="user-confirm-password"
+                id="user-confirm-password"
+                min="6"
+                max="18"
+                required
+              />
+            </div>
           </fieldset>
-          <button type="submit">Create Account</button>
+          <button class="btn-primary" type="submit">Create Account</button>
         </form>
+        <p class="login-text">Already have an account? <a href="#">Log in</a></p>
       </div>
     </div>
   </body>
